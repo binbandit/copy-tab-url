@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Tab URL",
+  "version": "1.0.0",
+  "minimum_chrome_version": "116",
+  "description": "Copy the exact current tab URL with a quiet confirmation.",
+  "permissions": ["activeTab", "scripting", "clipboardWrite", "offscreen"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_title": "Copy current tab URL"},
+  "commands": {
+    "copy-url": {
+      "suggested_key": {"mac": "Command+Shift+C"},
+      "description": "Copy current tab URL"
+    }
+  }
+}

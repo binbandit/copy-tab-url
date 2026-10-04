@@ -1,0 +1,13 @@
+{
+  "name": "copy-tab-url",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/unit.cjs",
+    "test:browser": "node tests/browser.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "30.1.2",
+    "playwright": "1.63.0"
+  }
+}
